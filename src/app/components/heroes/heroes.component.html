@@ -2,7 +2,7 @@
 
 <div class="row row-cols-1 row-cols-md-4 g-4">
 
-      <app-heroe-tarjeta [heroe]="heroeLocal" [indice] = "i" *ngFor="let heroeLocal of heroes; let i = index"></app-heroe-tarjeta>
+      <app-heroe-tarjeta (heroeSelecccionado)="verHeroe($event)" [heroe]="heroeLocal" [indice] = "i" *ngFor="let heroeLocal of heroes; let i = index"></app-heroe-tarjeta>
 
 </div>
 
